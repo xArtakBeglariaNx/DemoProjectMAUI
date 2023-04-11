@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoProjectMAUI.Views.EmployeePage"
+             Title="List of Employees"
+             xmlns:viewModels="clr-namespace:DemoProjectMAUI.ViewModels"
+             xmlns:models="clr-namespace:DemoProjectMAUI.Models"
+             xmlns:searchHandler = "clr-namespace:DemoProjectMAUI.SearchHandlers"
+             x:DataType="viewModels:EmployeeViewModel"
+             x:Name="EmployeeList">
+
+    <!-- Row 1 -->
+    <Shell.SearchHandler>
+        <searchHandler:EmployeeSearchHandler
+                    Placeholder="Search Name"
+                    ShowsResults="True"
+                    NavigationRout="EditEmployeePage"
+                    Employees="{x:Static viewModels:EmployeeViewModel.SearchEmployees}">
+            <searchHandler:EmployeeSearchHandler.ItemTemplate>
+                <DataTemplate x:DataType="models:EmployeeModel">
+                    <HorizontalStackLayout>
+                        <Label Text="{Binding FirstName}"/>
+                        <BoxView Opacity="0" WidthRequest="10"/>
+                        <Label Text="{Binding LastName}"/>
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </searchHandler:EmployeeSearchHandler.ItemTemplate>
+        </searchHandler:EmployeeSearchHandler>
+    </Shell.SearchHandler>
+
+    <ContentPage.Content>
+        
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="85*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            
+            <!--Row 2-->
+            <CollectionView Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0"
+                            ItemsSource="{Binding EmployeesList}">
+                <CollectionView.EmptyView>
+                    <Frame Margin="2" Padding="2">
+                        <StackLayout>
+                            <Label Text="DataBase is empty" 
+                                   FontSize="Caption" 
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:EmployeeModel">
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItemView>
+                                        <VerticalStackLayout HorizontalOptions="Center" 
+                                                             VerticalOptions="Center">
+                                            <Button Text="Delete"
+                                                    x:Name="Delete"
+                                                   FontAttributes="Bold"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:EmployeeViewModel}}, 
+                                                Path=DeleteEmployeeCommand}"
+                                                    CommandParameter="{Binding .}"/>
+                                        </VerticalStackLayout>
+                                    </SwipeItemView>
+                                    <SwipeItemView>
+                                        <VerticalStackLayout HorizontalOptions="Center" 
+                                                             VerticalOptions="Center">
+                                            <Button Text="Edit"
+                                                    x:Name="Edit"
+                                                   FontAttributes="Bold"
+                                                    CommandParameter="{Binding .}"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:EmployeeViewModel}}, 
+                                                Path=EditEmployeeCommand}"/>
+                                        </VerticalStackLayout>
+                                    </SwipeItemView>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Frame Margin="1" Grid.Column="0" Grid.ColumnSpan="4">
+                                    <VerticalStackLayout >
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding FirstName}" Grid.Column="0" Grid.ColumnSpan="2" />
+                                            <BoxView WidthRequest="8" Opacity="0"/>
+                                            <Label Text="{Binding LastName}" Grid.Column="2" Grid.ColumnSpan="2" />
+                                        </HorizontalStackLayout>
+                                        <Label Text="{Binding Post}"/>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Date.Day}"/>
+                                            <Label Text="-"/>
+                                            <Label Text="{Binding Date.Month}"/>
+                                            <Label Text="-"/>
+                                            <Label Text="{Binding Date.Year}"/>
+                                        </HorizontalStackLayout>
+                                        
+                                    </VerticalStackLayout>
+                                </Frame>
+                                
+                            </Grid>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Row 4-->
+            <Button Grid.Row="1" Grid.Column="2" 
+                    Grid.ColumnSpan="2"
+                    x:Name="AddButton" 
+                    Text="Add Employee"
+                    Margin="20,10,20,10"
+                    Command="{Binding AddEmployeeCommand}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

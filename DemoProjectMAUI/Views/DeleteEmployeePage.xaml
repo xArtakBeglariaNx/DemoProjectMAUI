@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoProjectMAUI.Views.DeleteEmployeePage"
+             xmlns:viewModels="clr-namespace:DemoProjectMAUI.ViewModels"
+             x:DataType="viewModels:DeleteEmployeeViewModel">
+    <ContentPage.Content>
+
+        <Grid Margin="5" Padding="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Frame Grid.Column="0" Grid.Row="0" Margin="2">
+                <Label Text="First Name" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame Grid.Column="0" 
+                   Grid.Row="1" 
+                   Margin="2">
+                <Label Text="Last Name" 
+                       VerticalTextAlignment="Center"/>
+            </Frame >
+            <Frame Grid.Column="0" 
+                   Grid.Row="2" 
+                   Margin="2">
+                <Label Text="Post" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame Grid.Column="0"
+                   Grid.Row="3" 
+                   Margin="2">
+                <Label Text="Date" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+
+            <Frame Grid.Column="1" Grid.Row="0" Margin="2" Padding="0">
+                <Label Text="{Binding EmployeeDetail.FirstName}" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame Grid.Column="1" Grid.Row="1" Margin="2" Padding="0">
+                <Label Text="{Binding EmployeeDetail.LastName}" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame Grid.Column="1" Grid.Row="2" Margin="2" Padding="0">
+                <Label Text="{Binding EmployeeDetail.Post}" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+            <Frame Grid.Column="1" Grid.Row="3" Margin="2" Padding="0">
+                <Label Text="{Binding EmployeeDetail.Date}" 
+                       VerticalTextAlignment="Center"/>
+            </Frame>
+
+            <Frame Grid.Column="1" Grid.Row="8" Margin="2" CornerRadius="3">
+                <Button x:Name="DeleteButton" 
+                        Text="Delete"
+                        HorizontalOptions="End" 
+                        VerticalOptions="End"
+                        Command="{Binding DeleteEmployeeCommand}"/>
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
