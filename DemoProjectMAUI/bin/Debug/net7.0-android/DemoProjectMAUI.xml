@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoProjectMAUI</name>
+    </assembly>
+    <members>
+        <member name="P:DemoProjectMAUI.ViewModels.AddEmployeeViewModel.EmployeeDetail">
+            <inheritdoc cref="F:DemoProjectMAUI.ViewModels.AddEmployeeViewModel._employeeDetail"/>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.AddEmployeeViewModel.addEmployeeCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.AddEmployeeViewModel.AddEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.AddEmployeeViewModel.AddEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.AddEmployeeViewModel.AddEmployee"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.DeleteEmployeeViewModel.EmployeeDetail">
+            <inheritdoc cref="F:DemoProjectMAUI.ViewModels.DeleteEmployeeViewModel._employeeDetail"/>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.DeleteEmployeeViewModel.deleteEmployeeCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.DeleteEmployeeViewModel.DeleteEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.DeleteEmployeeViewModel.DeleteEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.DeleteEmployeeViewModel.DeleteEmployee"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.EditEmployeeViewModel.EmployeeDetail">
+            <inheritdoc cref="F:DemoProjectMAUI.ViewModels.EditEmployeeViewModel._employeeDetail"/>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.EditEmployeeViewModel.editEmployeeInfoCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.EditEmployeeViewModel.EditEmployeeInfoCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.EditEmployeeViewModel.EditEmployeeInfoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.EditEmployeeViewModel.EditEmployeeInfo"/>.</summary>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.EmployeeViewModel.getEmployeesListCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.GetEmployeesListCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.GetEmployeesListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.EmployeeViewModel.GetEmployeesList"/>.</summary>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.EmployeeViewModel.addEmployeeCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.AddEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.AddEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.EmployeeViewModel.AddEmployee"/>.</summary>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.EmployeeViewModel.editEmployeeCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.EditEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.EditEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.EmployeeViewModel.EditEmployee(DemoProjectMAUI.Models.EmployeeModel)"/>.</summary>
+        </member>
+        <member name="F:DemoProjectMAUI.ViewModels.EmployeeViewModel.deleteEmployeeCommand">
+            <summary>The backing field for <see cref="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.DeleteEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:DemoProjectMAUI.ViewModels.EmployeeViewModel.DeleteEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:DemoProjectMAUI.ViewModels.EmployeeViewModel.DeleteEmployee(DemoProjectMAUI.Models.EmployeeModel)"/>.</summary>
+        </member>
+    </members>
+</doc>

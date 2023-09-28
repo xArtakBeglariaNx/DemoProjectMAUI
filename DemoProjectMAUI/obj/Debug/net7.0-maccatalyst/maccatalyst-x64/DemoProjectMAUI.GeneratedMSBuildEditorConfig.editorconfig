@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DemoProjectMAUI
+build_property.ProjectDir = C:\Users\artge\RiderProjects\DemoProjectMAUI\DemoProjectMAUI\
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Controls/Footer.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Controls.Footer.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\Footer.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\Footer.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Controls/Header.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Controls.Header.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\Header.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\Header.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Views/AddEmployeePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Views.AddEmployeePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddEmployeePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddEmployeePage.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Views/DeleteEmployeePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Views.DeleteEmployeePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DeleteEmployeePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DeleteEmployeePage.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Views/EditEmployeePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Views.EditEmployeePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditEmployeePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditEmployeePage.xaml
+
+[C:/Users/artge/RiderProjects/DemoProjectMAUI/DemoProjectMAUI/Views/EmployeePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DemoProjectMAUI.Views.EmployeePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EmployeePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EmployeePage.xaml
